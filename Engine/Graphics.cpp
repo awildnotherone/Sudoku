@@ -344,10 +344,10 @@ void Graphics::DrawRect(int x, int y, int LeftX, int TopY, int width, int height
 		}
 }
 
-void Graphics::DrawHorizontal(int x, int y, int LeftX, int TopY, int width, int borderwidth, Color c)
+void Graphics::DrawHorizontal(int x, int y, int LeftX, int TopY, int width, int height, Color c)
 {
 	for (x = LeftX; x < (LeftX + width + 1); x++)
-		for (y = TopY; y<(TopY + borderwidth + 1); y++)
+		for (y = TopY; y<(TopY + height + 1); y++)
 		{
 			PutPixel(x, y, c);
 		}
@@ -357,6 +357,15 @@ void Graphics::DrawVertical(int x, int y, int LeftX, int TopY, int height, int b
 {
 	for (y = TopY; y < (TopY + height + 1); y++)
 		for (x = LeftX; x<(LeftX + borderwidth + 1); x++)
+		{
+			PutPixel(x, y, c);
+		}
+}
+
+void Graphics::DrawNumberPixel(int x, int y, int LeftX, int TopY, int width, int height, Color c)
+{
+	for (x = LeftX; x < (LeftX + width + 1); x++)
+		for (y = TopY; y < (TopY + height + 1); y++)
 		{
 			PutPixel(x, y, c);
 		}

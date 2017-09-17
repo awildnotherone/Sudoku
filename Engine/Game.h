@@ -24,13 +24,14 @@
 #include "Mouse.h"
 #include "Graphics.h"
 #include "Board.h"
+#include "Numbers.h"
 
 class Game
 {
 public:
-	Game( class MainWindow& wnd );
-	Game( const Game& ) = delete;
-	Game& operator=( const Game& ) = delete;
+	Game(class MainWindow& wnd);
+	Game(const Game&) = delete;
+	Game& operator=(const Game&) = delete;
 	void Go();
 private:
 	void ComposeFrame();
@@ -43,6 +44,17 @@ private:
 	Graphics gfx;
 	/********************************/
 	/*  User Variables              */
-	Board board; 
+	Board board;
+	One one; 
+	Two two;
+	Three three; 
+	Four four; 
+	Five five; 
+	Six six; 
+	Seven seven; 
+	Eight eight; 
+	Nine nine; 
+	int x;
+	int y;
 	/********************************/
-};
+}; 

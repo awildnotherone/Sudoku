@@ -43,4 +43,14 @@ void Game::UpdateModel()
 void Game::ComposeFrame()
 {
 	board.Draw(gfx); 
+	one.Draw(gfx); 
+	two.Draw(gfx); 
+	three.Draw(gfx); 
+	four.Draw(gfx); 
+	five.Draw(gfx); 
+	six.Draw(gfx); 
+	seven.Draw(gfx); 
+	eight.Draw(gfx); 
+	nine.Draw(gfx); 
+	
 }
