@@ -45,6 +45,7 @@ private:
 	/********************************/
 	/*  User Variables              */
 	Board board;
+
 	One one; 
 	Two two;
 	Three three; 

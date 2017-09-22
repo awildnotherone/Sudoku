@@ -43,6 +43,11 @@ void Game::UpdateModel()
 void Game::ComposeFrame()
 {
 	board.Draw(gfx); 
+
+	board.DrawCursor(gfx);
+	board.UpdateCursor(wnd.kbd); 
+	board.ClampCursor(); 
+
 	one.Draw(gfx); 
 	two.Draw(gfx); 
 	three.Draw(gfx); 
